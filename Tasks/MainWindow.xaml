@@ -4,9 +4,43 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tasks"
+        xmlns:userControls="clr-namespace:Tasks.View.UserControls"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition />
+            <RowDefinition Height="25"/>
+        </Grid.RowDefinitions>
+        <Grid>
+            <userControls:MenuBar />
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="15*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="75*"/>
+            </Grid.RowDefinitions>
+            <userControls:AddNewTask Grid.Row="1"/>
+            <Grid Grid.Row="3">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                </Grid.RowDefinitions>
+                <userControls:TopNavbar />
+                <Grid Grid.Row="1">
+                    <userControls:TaskNode />
+                </Grid>
+                <Grid Grid.Row="2">
+                    <userControls:TaskNode />
+                </Grid>
+            </Grid>
+            
+        </Grid>
+        <TextBlock Grid.Row="2" Text="@parthpatel-01"></TextBlock>
     </Grid>
 </Window>

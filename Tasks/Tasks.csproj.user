@@ -7,7 +7,33 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="View\UserControls\AddNewTask.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\UserControls\MenuBar.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\UserControls\TaskNode.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\UserControls\TopNavbar.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\UserControls\AddNewTask.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\UserControls\MenuBar.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\UserControls\TaskNode.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\UserControls\TopNavbar.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
 D:\Karma\Tasks\Tasks\Tasks\App.xaml
-11407045341
+5127456208
 
-6-1917736332
+102087575657
 1981723223080
-MainWindow.xaml;
+MainWindow.xaml;View\UserControls\AddNewTask.xaml;View\UserControls\MenuBar.xaml;View\UserControls\TaskNode.xaml;View\UserControls\TopNavbar.xaml;
 
-False
+True
 
